@@ -65,7 +65,16 @@
             Эффективные решения для <br />
             вашего бизнеса
           </h1>
-          <button type="button" class="hero-btn button">Заказать услугу</button>
+          <button type="button" class="hero-btn button" data-modal-open>Заказать услугу</button>
+        </div>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+              <button type="button" class="modal-close-btn" data-modal-close>
+                <svg class="close" width="14" height="14">
+                  <use href="./images/icons.svg#icon-close"></use>
+                </svg> 
+              </button>
+          </div>
         </div>
       </section>
       <!-- Privelegy section  -->
@@ -138,6 +147,7 @@
                 height="294"
                 class="occupation-img"
               />
+              <p class="occupation-img-text">Десктопные приложения</p>
             </li>
             <li class="occupation-item card-item">
               <img
@@ -146,7 +156,7 @@
                 width="370"
                 height="294"
                 class="occupation-img"
-              />
+              /><p class="occupation-img-text">Мобильные приложения</p>
             </li>
             <li class="occupation-item card-item">
               <img
@@ -155,7 +165,7 @@
                 width="370"
                 height="294"
                 class="occupation-img"
-              />
+              /><p class="occupation-img-text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -334,37 +344,37 @@
           <h2 class="clients-title section-title">Постоянные клиенты</h2>
           <ul class="clients-list list card-set">
             <li class="clients-item card-item">
-              <a class="clients-link" href="" target="_blank" rel="noreferrer noopener">
+              <a class="clients-link link" href="" target="_blank" rel="noreferrer noopener">
                 <svg class="client-1" width="106" height="60">
                   <use href="./images/icons.svg#icon-client-1"></use></svg
               ></a>
             </li>
             <li class="clients-item card-item">
-              <a class="clients-link" href="" target="_blank" rel="noreferrer noopener">
+              <a class="clients-link link" href="" target="_blank" rel="noreferrer noopener">
                 <svg class="client-2" width="106" height="60">
                   <use href="./images/icons.svg#icon-client-2"></use></svg
               ></a>
             </li>
             <li class="clients-item card-item">
-              <a class="clients-link" href="" target="_blank" rel="noreferrer noopener">
+              <a class="clients-link link" href="" target="_blank" rel="noreferrer noopener">
                 <svg class="client-3" width="106" height="60">
                   <use href="./images/icons.svg#icon-client-3"></use></svg
               ></a>
             </li>
             <li class="clients-item card-item">
-              <a class="clients-link" href="" target="_blank" rel="noreferrer noopener">
+              <a class="clients-link link" href="" target="_blank" rel="noreferrer noopener">
                 <svg class="client-4" width="106" height="60">
                   <use href="./images/icons.svg#icon-client-4"></use></svg
               ></a>
             </li>
             <li class="clients-item card-item">
-              <a class="clients-link" href="" target="_blank" rel="noreferrer noopener">
+              <a class="clients-link link" href="" target="_blank" rel="noreferrer noopener">
                 <svg class="client-5" width="106" height="60">
                   <use href="./images/icons.svg#icon-client-5"></use></svg
               ></a>
             </li>
             <li class="clients-item card-item">
-              <a class="clients-link" href="" target="_blank" rel="noreferrer noopener">
+              <a class="clients-link link" href="" target="_blank" rel="noreferrer noopener">
                 <svg class="client-6" width="106" height="60">
                   <use href="./images/icons.svg#icon-client-6"></use></svg
               ></a>
@@ -435,6 +445,9 @@
           </div>
       </div>
     </footer>
+
+    <!-- Modal window sctript -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
 
